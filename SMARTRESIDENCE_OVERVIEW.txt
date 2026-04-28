@@ -1,0 +1,126 @@
+SmartResidence CY - Project Overview
+
+1. What SmartResidence CY is
+
+SmartResidence CY is an academic MERN web platform for a smart university residence and connected building environment.
+It is designed to demonstrate how students, administrators, and advanced users can interact with connected zones, smart devices, residence services, activity logs, and reports in one intelligent platform.
+
+The project is oriented around IoT supervision, user progression, access control, service management, and smart-residence monitoring.
+
+2. The 4 modules
+
+Information
+- Public module accessible to visitors
+- Presents the platform, announcements, public search, and residence information
+
+Visualisation
+- Member module for authenticated approved users
+- Gives access to dashboards, profiles, devices, services, and activity history
+
+Gestion
+- Advanced module for elevated users
+- Allows connected-device management, status updates, telemetry consultation, maintenance follow-up, and operational actions
+
+Administration
+- Restricted module for administrators
+- Handles approvals, user management, platform rules, logs, reports, categories, and overall platform supervision
+
+3. The 4 user roles
+
+Visiteur
+- Public non-authenticated user
+- Can browse public pages and discover the residence platform
+
+Simple
+- Standard approved authenticated member
+- Can access visualisation features such as dashboard, profile, devices, and services
+
+Complexe
+- Advanced member with management capabilities
+- Gains access to the Gestion module and can interact with operational smart-device features
+
+Administrateur
+- Full-access administrator
+- Can manage users, approvals, roles, settings, logs, categories, reports, and administration tools
+
+4. The tech stack
+
+Frontend
+- React
+- Vite
+- JavaScript
+- CSS / utility-style component classes
+- Zustand for user/auth state
+- Axios for API communication
+
+Backend
+- Node.js
+- Express.js
+- Mongoose
+- JWT-based authentication with cookies
+
+Database
+- MongoDB Atlas / MongoDB
+
+5. The database
+
+The project uses MongoDB with Mongoose models to store real application data.
+Important entities include:
+- User
+- RegistrationRequest
+- Zone
+- DeviceCategory
+- ServiceCategory
+- ConnectedDevice
+- DeviceTelemetry
+- ResidenceService
+- Announcement
+- AccessLog
+- ActionLog
+- MaintenanceRequest
+- GlobalSetting
+
+This allows the platform to persist users, residence zones, connected devices, telemetry, services, announcements, reports, logs, and administrative settings.
+
+6. Important features
+
+- Smart residence / IoT-oriented platform
+- Public visitor experience
+- Authentication, approval flow, and demo-friendly email verification
+- Role-based access control
+- Level-based progression system
+- User points, access count, and action count
+- Connected devices and device categories
+- Residence services and service categories
+- Zone exploration and smart-building presentation
+- Access logs and action logs
+- Reports and statistics
+- Maintenance and deletion requests
+- Search with visible filters
+- Responsive UI for academic demonstration
+- Seed/demo data for immediate presentation use
+
+7. What was transformed from the old MERN e-commerce repository
+
+The original repository was an e-commerce MERN project.
+It was transformed into SmartResidence CY by reusing the useful architecture and replacing the business domain.
+
+Main transformation examples:
+- Product logic was repurposed into ConnectedDevice logic
+- Category logic was adapted into DeviceCategory and ServiceCategory
+- Analytics were redirected toward residence statistics, energy usage, logs, and reports
+- Admin dashboard logic was adapted into smart-residence administration
+- Generic forms, cards, filters, tables, and auth flows were reused and redesigned
+
+E-commerce concepts that were removed or neutralized:
+- cart
+- checkout
+- payment flow
+- coupons
+- orders
+- store/shop wording
+- pricing/discount logic
+
+Final result:
+The repository no longer presents an online store.
+It now presents a smart connected residence platform aligned with the academic project requirements.
